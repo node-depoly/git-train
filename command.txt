@@ -19,6 +19,7 @@ git merge <barnch name>   //  مرج برنچ نام برده شده با برن
 git rm <filename>         //delete a file from git and file system
 git branch -d <branch name>   //delete branch
 git clone <adress>
+git remote add origin <adress>
 git push origin master
 git pull origin master
 git remote add origin <address>
