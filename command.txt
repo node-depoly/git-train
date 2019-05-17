@@ -1,0 +1,49 @@
+touch <filname>    //create a file
+start <filename>     //open a file
+:wq                 //escape from editor
+-------------------------------------------------------------------------------------
+git init
+git add -A 
+git add <file name>
+git commit -m "Description"
+git status 
+git log
+git diff head                               (نشان دادن اخرین تغییرات بعد از اخرین کامیت)
+git diff --staged                           (نشان دادن اخرین تغییرات استیج شده بعد از اخرین کامیت)
+git reset page3.html                        (بیرون کشیدن این صفحه از استیج)
+git checkout -- page3.html                  (برگرداندن این پیج به کامیت اخر)
+git branch            //branch list
+git branch <branch name>    //create a branch
+git checkout <branch name>  //enter the branch
+git merge <barnch name>   //  مرج برنچ نام برده شده با برنچ حال حاظر
+git rm <filename>         //delete a file from git and file system
+git branch -d <branch name>   //delete branch
+git clone <adress>
+git remote add origin <adress>
+git push origin master
+git pull origin master
+git remote add origin <address>
+--------------------------------------------------------------------------------------
+git tag -a v2.0 -m ''
+git tag -a v1.8 <ای دی کامیت> -m''
+git tag -l "v*"   //show every tag with V
+git show v1.8 
+git push origin v1.8
+git push origin --tag
+git checkout v1.8  
+-------------------------------------------------------------------------------------
+gpg --gen-key
+gpg --list-keys
+git config --global user.name
+git config --global user.signingkey
+(gpg --list-secret-keys --keyid-format LONG)=D
+git config --global user.signingkey D
+git tag -s v2.1 -m 'sign to version' 
+git show v2.1
+git tag -v v2.1 
+git commit -S -m 'signing'
+--------------------------------------------------------------------------------------
+git blame <filename>
+git blame <filename> -L8  (عدد 8 شماره خط یا لاین در فایل)
+git blame <filename> -L8,10
+
